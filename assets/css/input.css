@@ -46,8 +46,20 @@ body {
     @apply text-lg font-medium uppercase text-[#F58220]
 }
 
+.small_title.after {
+    @apply after:absolute after:content-[''] after:w-28 after:h-[1.5px] after:right-0 after:top-0 after:bg-[#FFB805]
+}
+
+.small_title.black {
+    @apply text-[#303030]
+}
+
 .section_title {
     @apply text-xl leading-8 font-semibold text-[#303030]
+}
+
+.section_title.after {
+    @apply after:absolute after:content-[''] after:w-10 after:h-[2px] after:bg-[#F58220] after:bottom-0 after:right-0
 }
 
 .bg_section {
@@ -56,4 +68,8 @@ body {
 
 .bg_section .overlay {
     @apply bg-[#FFB805EB] opacity-85 z-0
+}
+
+.service_card {
+    @apply py-8 pl-8 border border-[#F58220] rounded-lg min-h-[420px]
 }
