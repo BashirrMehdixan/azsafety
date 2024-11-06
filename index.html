@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Azsafety | Home</title>
+    <!-- Poppins font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <!-- Glide js -->
+    <link rel="stylesheet" href="./assets/plugins/glide/glide.core.min.css">
+    <link rel="stylesheet" href="./assets/plugins/glide/glide.theme.min.css">
+    <!-- Material design icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+<body>
+<header>
+    <div class="bg-[#1E1E1E] py-3">
+        <div class="container">
+            <div class="flex items-center justify-end">
+                <ul class="social_networks">
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-facebook"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-linkedin"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-youtube"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pl-3">
+                    <form action="">
+                        <div class="relative flex-1">
+                            <label>
+                                <input type="text" class="form_control" placeholder="Axtar">
+                            </label>
+                            <button class="text-lg text-white absolute top-[12%] right-[5px]">
+                                <span class="mdi mdi-magnify"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="flex items center justify-between py-3">
+                <a href="./index.html">
+                    <img src="./assets/images/logo.png" class="max-w-[70px]" alt="Azsafety">
+                </a>
+                <ul class="flex items-center gap-5">
+                    <li class="hover_element">
+                        <a href="./about.html">
+                            Haqqımızda
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./products.html">
+                            Məhsullar
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./services.html">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./certificates.html">
+                            Sertifikatlar
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./contact.html">
+                            Əlaqə
+                        </a>
+                    </li>
+                    <li class="relative" x-data="{ open: false }">
+                        <button class="flex items-center" @click="open = !open">
+                            <span>Az</span>
+                            <span class="mdi mdi-chevron-down text-xl"></span>
+                        </button>
+                        <ul class="absolute min-w-[80px] max-w-[100px] rounded-md bg-white shadow-2xl px-4 pb-3" x-show="open">
+                            <li class="pt-3">
+                                <a href="#" class="block w-full">
+                                    Az
+                                </a>
+                            </li>
+                            <li class="pt-3">
+                                <a href="#" class="block w-full">
+                                    En
+                                </a>
+                            </li>
+                            <li class="pt-3">
+                                <a href="#" class="block w-full">
+                                    Ru
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="">
+        <div class="glide banner_glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide" data-bg="./assets/images/banner/banner.png">
+                        <div class="overlay"></div>
+                        <div class="w-3/4 text-center text-white">
+                            <h3 class="text-4xl">
+                                The standard Lorem Ipsum passage
+                            </h3>
+                            <p class="text-lg font-light py-10">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <a href="#" class="btn_outline">
+                                Ətrafli
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<!--Alpine js-->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!--Glide js-->
+<script src="./assets/plugins/glide/glide.min.js"></script>
+<!--Custom js-->
+<script src="./assets/js/slides.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

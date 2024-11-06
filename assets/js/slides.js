@@ -1,0 +1,1 @@
+new Glide('.banner_glide').mount();
