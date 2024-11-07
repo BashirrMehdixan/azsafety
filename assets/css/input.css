@@ -22,6 +22,10 @@ body {
     @apply relative flex items-center gap-4 text-white text-lg pr-5 after:content-[''] after:absolute after:w-[1px] after:h-full after:bg-white after:right-0
 }
 
+.lang_items {
+    @apply absolute min-w-[80px] max-w-[100px] rounded-md bg-white shadow-2xl px-4 pb-3 z-10
+}
+
 .form_control {
     @apply inline-block w-full rounded-md pl-2 py-1 bg-transparent border border-white focus:outline-none text-white
 }
@@ -55,7 +59,7 @@ body {
 }
 
 .section_title {
-    @apply text-xl leading-8 font-semibold text-[#303030]
+    @apply text-2xl leading-8 font-semibold text-[#303030]
 }
 
 .section_title.after {
@@ -72,4 +76,12 @@ body {
 
 .service_card {
     @apply py-8 pl-8 border border-[#F58220] rounded-lg min-h-[420px]
+}
+
+.absolute_img {
+    @apply w-full absolute h-[210px] md:h-[150px] bottom-2
+}
+
+.absolute_img.small_img {
+    @apply max-w-[250px] h-[260px]
 }

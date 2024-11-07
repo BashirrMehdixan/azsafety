@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,7 +71,7 @@
                 <a href="./index.html">
                     <img src="./assets/images/logo.png" class="max-w-[70px]" alt="Azsafety">
                 </a>
-                <ul class="flex items-center gap-5">
+                <ul class="hidden lg:flex items-center gap-5">
                     <li class="hover_element">
                         <a href="./about.html">
                             Haqqımızda
@@ -102,18 +102,18 @@
                             <span>Az</span>
                             <span class="mdi mdi-chevron-down text-xl"></span>
                         </button>
-                        <ul class="absolute min-w-[80px] max-w-[100px] rounded-md bg-white shadow-2xl px-4 pb-3" x-show="open">
-                            <li class="pt-3">
+                        <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
+                            <li class="pt-3 hover:bg-[#FFB805]">
                                 <a href="#" class="block w-full">
                                     Az
                                 </a>
                             </li>
-                            <li class="pt-3">
+                            <li class="pt-3 hover:bg-[#FFB805]">
                                 <a href="#" class="block w-full">
                                     En
                                 </a>
                             </li>
-                            <li class="pt-3">
+                            <li class="pt-3 hover:bg-[#FFB805]">
                                 <a href="#" class="block w-full">
                                     Ru
                                 </a>
@@ -224,7 +224,7 @@
                                     <div class="relative small_title black after pt-16">
                                         liferats
                                     </div>
-                                    <p class="text-xs leading-[20px] pt-4">
+                                    <p class="text-xs leading-5 pt-4">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                         standard dummy text ever since the 1500s.
                                     </p>
@@ -240,7 +240,7 @@
                                     <div class="relative small_title black after pt-16">
                                         Personal protective equipments
                                     </div>
-                                    <p class="text-xs leading-[20px] pt-4">
+                                    <p class="text-xs leading-5 pt-4">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                         standard dummy text ever since the 1500s.
                                     </p>
@@ -256,7 +256,7 @@
                                     <div class="relative small_title black after pt-16">
                                         Marine Fire
                                     </div>
-                                    <p class="text-xs leading-[20px] pt-4">
+                                    <p class="text-xs leading-5 pt-4">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                         standard dummy text ever since the 1500s.
                                     </p>
@@ -272,7 +272,7 @@
                                     <div class="relative small_title black after pt-16">
                                         Boats&Davits
                                     </div>
-                                    <p class="text-xs leading-[20px] pt-4">
+                                    <p class="text-xs leading-5 pt-4">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                         standard dummy text ever since the 1500s.
                                     </p>
@@ -293,6 +293,85 @@
         </div>
     </section>
     <!-- Services end -->
+
+    <section class="pb-8">
+        <div class="container">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative bg-[#F58220] h-[350px] md:h-[310px] p-5">
+                    <div class="text-white">
+                        <h4 class="text-2xl uppercase font-semibold">
+                            yeni <br> məhsullar
+                        </h4>
+                        <p class="text-xs leading-5 py-5">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+                    <img src="./assets/images/why_us/why_1.png" class="absolute_img left-0" alt="">
+                </div>
+                <div class="relative bg-[#F4EEE9] h-[350px] md:h-[310px] p-5">
+                    <div class="text-[#2E2937]">
+                        <h4 class="text-2xl uppercase font-semibold text-center">
+                            DAHA <br>
+                            TƏHLÜKƏSİZ
+                        </h4>
+                        <p class="text-xs leading-5 py-5">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <img src="./assets/images/why_us/why_2.png" class="absolute_img left-0" alt="">
+                </div>
+                <div class="relative bg-[#2E2937] h-[350px] md:h-[310px] p-5">
+                    <div class="text-white">
+                        <h4 class="text-2xl uppercase font-semibold">
+                            Çox <br>
+                            satılanlar
+                        </h4>
+                        <p class="text-xs leading-5 py-5">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <img src="./assets/images/why_us/why_3.png" class="absolute_img right-0 max-w-[255px]" alt="">
+                </div>
+                <div class="relative bg-[#F0F3F6] h-[350px] md:h-[310px] p-5">
+                    <div class="text-[#2E2937]">
+                        <h4 class="text-2xl text-right uppercase font-semibold">
+                            LOREM IPSUM <br>
+                            DOLOR SIT AMET
+                        </h4>
+                    </div>
+                    <img src="./assets/images/why_us/why_4.png" class="absolute_img left-0 small_img" alt="">
+                </div>
+                <div class="relative bg-[#F3DABB] h-[350px] md:h-[310px] p-5">
+                    <div class="row lg:h-full items-center">
+                        <div class="w-full lg:w-1/2">
+                            <div class="text-[#2E2937]">
+                                <h4 class="text-2xl uppercase font-semibold">
+                                    ENDİRİMLİ MƏHSULLAR
+                                </h4>
+                                <p class="text-xs leading-5 py-5">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <div class="w-full h-[280px]">
+                                <img src="./assets/images/why_us/why_5.png" class="w-full h-full" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-[#F58220] h-[350px] md:h-[310px] p-5">
+                    <div class="text-white">
+                        <h4 class="text-2xl uppercase font-semibold text-center">
+                            LOREM IPSUM <br>
+                            DOLOR SIT AMET
+                        </h4>
+                    </div>
+                    <img src="./assets/images/why_us/why_6.png" class="absolute_img !h-[210px] left-0" height="320" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <!--Alpine js-->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
