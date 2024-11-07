@@ -294,10 +294,10 @@
     </section>
     <!-- Services end -->
 
-    <section class="pb-8">
+    <section class="pb-12">
         <div class="container">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="relative bg-[#F58220] h-[350px] md:h-[310px] p-5">
+                <div class="relative bg-[#F58220] h-[350px] md:h-[310px] cursor-pointer overflow-hidden group p-5">
                     <div class="text-white">
                         <h4 class="text-2xl uppercase font-semibold">
                             yeni <br> məhsullar
@@ -306,9 +306,9 @@
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                         </p>
                     </div>
-                    <img src="./assets/images/why_us/why_1.png" class="absolute_img left-0" alt="">
+                    <img src="./assets/images/why_us/why_1.png" class="transition duration-500 group-hover:scale-110 absolute_img left-0" alt="">
                 </div>
-                <div class="relative bg-[#F4EEE9] h-[350px] md:h-[310px] p-5">
+                <div class="relative bg-[#F4EEE9] h-[350px] md:h-[310px] cursor-pointer overflow-hidden group p-5">
                     <div class="text-[#2E2937]">
                         <h4 class="text-2xl uppercase font-semibold text-center">
                             DAHA <br>
@@ -318,9 +318,9 @@
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>
-                    <img src="./assets/images/why_us/why_2.png" class="absolute_img left-0" alt="">
+                    <img src="./assets/images/why_us/why_2.png" class="transition duration-500 group-hover:scale-110 absolute_img left-0" alt="">
                 </div>
-                <div class="relative bg-[#2E2937] h-[350px] md:h-[310px] p-5">
+                <div class="relative bg-[#2E2937] h-[350px] md:h-[310px] cursor-pointer overflow-hidden group p-5">
                     <div class="text-white">
                         <h4 class="text-2xl uppercase font-semibold">
                             Çox <br>
@@ -330,18 +330,21 @@
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>
-                    <img src="./assets/images/why_us/why_3.png" class="absolute_img right-0 max-w-[255px]" alt="">
+                    <img src="./assets/images/why_us/why_3.png"
+                         class="transition duration-500 group-hover:scale-110 absolute_img right-0 max-w-[255px]"
+                         alt="">
                 </div>
-                <div class="relative bg-[#F0F3F6] h-[350px] md:h-[310px] p-5">
+                <div class="relative bg-[#F0F3F6] h-[350px] md:h-[310px] cursor-pointer overflow-hidden group p-5">
                     <div class="text-[#2E2937]">
                         <h4 class="text-2xl text-right uppercase font-semibold">
                             LOREM IPSUM <br>
                             DOLOR SIT AMET
                         </h4>
                     </div>
-                    <img src="./assets/images/why_us/why_4.png" class="absolute_img left-0 small_img" alt="">
+                    <img src="./assets/images/why_us/why_4.png" class="transition duration-500 group-hover:scale-110 absolute_img left-0 small_img"
+                         alt="">
                 </div>
-                <div class="relative bg-[#F3DABB] h-[350px] md:h-[310px] p-5">
+                <div class="relative bg-[#F3DABB] h-[350px] md:h-[310px] cursor-pointer overflow-hidden group p-5">
                     <div class="row lg:h-full items-center">
                         <div class="w-full lg:w-1/2">
                             <div class="text-[#2E2937]">
@@ -355,23 +358,61 @@
                         </div>
                         <div class="w-full lg:w-1/2">
                             <div class="w-full h-[280px]">
-                                <img src="./assets/images/why_us/why_5.png" class="w-full h-full" alt="">
+                                <img src="./assets/images/why_us/why_5.png" class="transition duration-500 group-hover:scale-110 w-full h-full"
+                                     alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="relative bg-[#F58220] h-[350px] md:h-[310px] p-5">
+                <div class="relative bg-[#F58220] h-[350px] md:h-[310px] cursor-pointer overflow-hidden group p-5">
                     <div class="text-white">
                         <h4 class="text-2xl uppercase font-semibold text-center">
                             LOREM IPSUM <br>
                             DOLOR SIT AMET
                         </h4>
                     </div>
-                    <img src="./assets/images/why_us/why_6.png" class="absolute_img !h-[210px] left-0" height="320" alt="">
+                    <img src="./assets/images/why_us/why_6.png" class="transition duration-500 group-hover:scale-110 absolute_img !h-[210px] left-0"
+                         height="320"
+                         alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Products start -->
+    <section class="pb-10">
+        <div class="container">
+            <div class="pb-5 text-center">
+                <h4 class="relative inline-block mx-auto section_title after text-center">
+                    Məhsullar
+                </h4>
+            </div>
+            <div class="glide products_glide">
+                <div class="glide__track pb-12" data-glide-el="track">
+                    <ul class="glide__slides py-5">
+                        <li class="glide__slide px-4">
+                            <div class="product_card">
+                                <div class="max-w-[182px] mx-auto py-3">
+                                    <a href="./product.html" class="block w-full">
+                                        <img src="./assets/images/products/product.png" class="w-full" alt="">
+                                    </a>
+                                </div>
+                                <a href="./product.html" class="text-lg text-center font-medium">
+                                    SOLAS Inflatable Lifejacket-Child
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products end -->
 </main>
 <!--Alpine js-->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>

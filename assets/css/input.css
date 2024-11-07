@@ -78,8 +78,20 @@ body {
     @apply py-8 pl-8 border border-[#F58220] rounded-lg min-h-[420px]
 }
 
+.product_card {
+    @apply border border-[#D8DBF6] rounded-lg py-5 px-3 text-center
+}
+
 .absolute_img {
     @apply w-full absolute h-[210px] md:h-[150px] bottom-2
+}
+
+.products_glide .glide__bullets .glide__bullet {
+    @apply bg-[#D8DBF6] w-4 h-4 hover:bg-[#F58220]
+}
+
+.products_glide .glide__bullets .glide__bullet.glide__bullet--active {
+    @apply bg-[#F58220]
 }
 
 .absolute_img.small_img {
