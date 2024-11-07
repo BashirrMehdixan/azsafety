@@ -12,7 +12,7 @@ module.exports = {
                     'xl': '1280px',
                     '2xl': '1600px',
                 },
-                padding: "1rem"
+                padding: ".5rem"
             }
         },
     },

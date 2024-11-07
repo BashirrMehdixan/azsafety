@@ -22,6 +22,10 @@ body {
     @apply relative flex items-center gap-4 text-white text-lg pr-5 after:content-[''] after:absolute after:w-[1px] after:h-full after:bg-white after:right-0
 }
 
+.navbar {
+    @apply bg-white absolute lg:static w-full lg:w-auto flex flex-col lg:flex-row items-center gap-5 left-0 py-2.5 lg:py-0 bottom-0 translate-y-full lg:translate-y-0 z-10 lg:translate-x-0 transition duration-500
+}
+
 .lang_items {
     @apply absolute min-w-[80px] max-w-[100px] rounded-md bg-white shadow-2xl px-4 pb-3 z-10
 }
@@ -59,7 +63,7 @@ body {
 }
 
 .section_title {
-    @apply text-2xl leading-8 font-semibold text-[#303030]
+    @apply text-2xl leading-8 font-semibold text-[#303030] tracking-widest
 }
 
 .section_title.after {
@@ -79,7 +83,7 @@ body {
 }
 
 .product_card {
-    @apply border border-[#D8DBF6] rounded-lg py-5 px-3 text-center
+    @apply border border-[#D8DBF6] rounded-md py-5 px-3 text-center overflow-hidden
 }
 
 .absolute_img {
@@ -96,4 +100,12 @@ body {
 
 .absolute_img.small_img {
     @apply max-w-[250px] h-[260px]
+}
+
+.footer_widget {
+    @apply text-[#373636] space-y-2 mb-8 lg:mb-0
+}
+
+.footer_widget li {
+    @apply transition duration-500 ease-in-out hover:text-[#FFB805]
 }

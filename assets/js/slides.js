@@ -13,9 +13,6 @@ new Glide('.services_glide', {
         991: {
             perView: 2
         },
-        992: {
-            perView: 3
-        },
     }
 }).mount()
 new Glide('.products_glide', {
@@ -28,9 +25,6 @@ new Glide('.products_glide', {
         },
         991: {
             perView: 2
-        },
-        992: {
-            perView: 4
         },
     }
 }).mount()
