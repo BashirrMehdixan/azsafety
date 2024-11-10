@@ -95,7 +95,7 @@ body {
 }
 
 .service_card {
-    @apply py-8 pl-8 border border-[#F58220] rounded-lg min-h-[420px]
+    @apply py-8 pl-4 border border-[#F58220] rounded-lg min-h-[370px]
 }
 
 .product_card {
