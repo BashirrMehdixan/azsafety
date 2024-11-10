@@ -628,6 +628,14 @@ video {
   margin-top: 0.75rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -844,6 +852,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -886,6 +899,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -951,10 +968,6 @@ video {
   line-height: 1.25rem;
 }
 
-.leading-7 {
-  line-height: 1.75rem;
-}
-
 .text-\[\#2E2937\] {
   --tw-text-opacity: 1;
   color: rgb(46 41 55 / var(--tw-text-opacity));
@@ -968,6 +981,11 @@ video {
 .text-\[\#ACB1C4\] {
   --tw-text-opacity: 1;
   color: rgb(172 177 196 / var(--tw-text-opacity));
+}
+
+.text-\[\#AEAEAE\] {
+  --tw-text-opacity: 1;
+  color: rgb(174 174 174 / var(--tw-text-opacity));
 }
 
 .text-\[\#F58220\] {
@@ -1125,6 +1143,17 @@ body {
   color: rgb(245 130 32 / var(--tw-text-opacity));
 }
 
+.inner_text {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(48 48 48 / var(--tw-text-opacity));
+}
+
+.inner_text p {
+  padding-bottom: 0.75rem;
+}
+
 .before_line::after {
   position: absolute;
   top: 0px;
@@ -1135,6 +1164,17 @@ body {
   background-color: rgb(255 184 5 / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.before_line.after {
+  padding-left: 0px;
+  padding-right: 1.25rem;
+}
+
+.before_line.after::after {
+  left: auto;
+  content: var(--tw-content);
+  right: 0px;
 }
 
 .banner_glide .glide__slide {
@@ -1194,6 +1234,11 @@ body {
   letter-spacing: 0.1em;
   --tw-text-opacity: 1;
   color: rgb(48 48 48 / var(--tw-text-opacity));
+}
+
+.section_title.colored {
+  --tw-text-opacity: 1;
+  color: rgb(245 130 32 / var(--tw-text-opacity));
 }
 
 .section_title.after::after {
@@ -1316,6 +1361,14 @@ body {
 .footer_widget li:hover {
   --tw-text-opacity: 1;
   color: rgb(255 184 5 / var(--tw-text-opacity));
+}
+
+.odd\:flex-row-reverse:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.odd\:text-right:nth-child(odd) {
+  text-align: right;
 }
 
 .even\:mt-9:nth-child(even) {
