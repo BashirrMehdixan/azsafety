@@ -38,8 +38,20 @@ body {
     @apply transition duration-500 ease-in-out hover:text-[#F58220]
 }
 
+.inner_text {
+    @apply text-sm leading-7 text-[#303030]
+}
+
+.inner_text p {
+    @apply pb-3
+}
+
 .before_line {
     @apply after:content-[''] after:absolute after:w-[2px] after:h-full after:bg-[#FFB805] after:top-0 after:left-0
+}
+
+.before_line.after {
+    @apply after:left-auto after:right-0 pl-0 pr-5
 }
 
 .banner_glide .glide__slide {
@@ -64,6 +76,10 @@ body {
 
 .section_title {
     @apply text-2xl leading-8 font-semibold text-[#303030] tracking-widest
+}
+
+.section_title.colored {
+    @apply text-[#F58220]
 }
 
 .section_title.after {
