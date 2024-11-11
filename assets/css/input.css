@@ -99,7 +99,11 @@ body {
 }
 
 .product_card {
-    @apply border border-[#D8DBF6] rounded-md py-5 px-3 text-center overflow-hidden
+    @apply relative border border-[#D8DBF6] rounded-md py-5 px-3 text-center overflow-hidden
+}
+
+.p_badge {
+    @apply absolute bg-[#F58220] text-xs text-white py-3 px-6 rounded-lg left-3 z-10
 }
 
 .absolute_img {
@@ -124,4 +128,20 @@ body {
 
 .footer_widget li {
     @apply transition duration-500 ease-in-out hover:text-[#FFB805]
+}
+
+.form_select {
+    @apply border border-[#EFEFEF] py-3 px-6 focus:outline-none
+}
+
+.pagination_block {
+    @apply flex items-center justify-center gap-4
+}
+
+.pagination_link {
+    @apply block py-1 px-3 bg-white border border-[#D8DBF6] text-[#FFB805] rounded-md transition duration-500 hover:bg-[#FFB805] hover:text-white hover:border-transparent
+}
+
+.pagination_link.active {
+    @apply bg-[#FFB805] text-white border-transparent
 }
