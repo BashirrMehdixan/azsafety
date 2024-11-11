@@ -34,3 +34,9 @@ if (document.querySelector('.products_glide')) {
         }
     }).mount()
 }
+
+if (document.querySelector('.detail_glide')) {
+    new Glide('.detail_glide', {
+        type: 'carousel'
+    }).mount();
+}

@@ -95,11 +95,15 @@ body {
 }
 
 .service_card {
-    @apply py-8 pl-4 border border-[#F58220] rounded-lg min-h-[370px]
+    @apply py-8 pl-4 border border-[#D8DBF6] rounded-lg min-h-[370px]
+}
+
+.services_glide .glide__slide--active .service_card {
+    @apply border-[#F58220]
 }
 
 .product_card {
-    @apply relative border border-[#D8DBF6] rounded-md py-5 px-3 text-center overflow-hidden
+    @apply relative border border-[#D8DBF6] rounded-md py-5 px-3 text-center overflow-hidden transition duration-500 hover:border-[#F58220]
 }
 
 .p_badge {
