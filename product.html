@@ -1,0 +1,434 @@
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Azsafety | Products</title>
+    <!-- Poppins font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <!-- Glide js -->
+    <link rel="stylesheet" href="./assets/plugins/glide/glide.core.min.css">
+    <link rel="stylesheet" href="./assets/plugins/glide/glide.theme.min.css">
+    <!-- Material design icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+<body class="overflow-x-hidden">
+<!-- Navbar start-->
+<header class="relative" x-data="{ nav: false }">
+    <div class="bg-[#1E1E1E] py-3">
+        <div class="container">
+            <div class="flex items-center justify-end">
+                <ul class="social_networks">
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-facebook"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-linkedin"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="">
+                            <span class="mdi mdi-youtube"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pl-3">
+                    <form action="" class="m-0">
+                        <div class="relative flex-1">
+                            <label>
+                                <input type="text" class="form_control" placeholder="Axtar">
+                            </label>
+                            <button class="text-lg text-white absolute top-[12%] right-[5px]">
+                                <span class="mdi mdi-magnify"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="flex items center justify-between py-3">
+                <a href="./index.html">
+                    <img src="./assets/images/logo.png" class="max-w-[70px]" alt="Azsafety">
+                </a>
+                <ul class="navbar" x-bind:class="nav ? 'translate-x-0' : 'translate-x-full'">
+                    <li class="hover_element">
+                        <a href="./about.html">
+                            Haqqımızda
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./products.html">
+                            Məhsullar
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./services.html">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./certificates.html">
+                            Sertifikatlar
+                        </a>
+                    </li>
+                    <li class="hover_element">
+                        <a href="./contact.html">
+                            Əlaqə
+                        </a>
+                    </li>
+                    <li class="relative" x-data="{ open: false }">
+                        <button class="flex items-center" @click="open = !open">
+                            <span>Az</span>
+                            <span class="mdi mdi-chevron-down text-xl"></span>
+                        </button>
+                        <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
+                            <li class="pt-3 hover:bg-[#FFB805]">
+                                <a href="#" class="block w-full">
+                                    Az
+                                </a>
+                            </li>
+                            <li class="pt-3 hover:bg-[#FFB805]">
+                                <a href="#" class="block w-full">
+                                    En
+                                </a>
+                            </li>
+                            <li class="pt-3 hover:bg-[#FFB805]">
+                                <a href="#" class="block w-full">
+                                    Ru
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="block lg:hidden text-3xl" @click="nav = !nav">
+                    <span class="mdi" x-bind:class="nav ? 'mdi-close' : 'mdi-menu'"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Navbar end -->
+<main>
+    <!-- Breadcrumb start -->
+    <div class="py-9">
+        <div class="container">
+            <h3 class="text-2xl text-[#303030]">Məhsullar</h3>
+            <ul class="flex items-center text-sm text-[#AEAEAE] pt-5">
+                <li>
+                    <a href="./index.html">
+                        Ana səhifə
+                    </a>
+                </li>
+                <li>
+                    <span class="mdi mdi-chevron-right"></span>
+                </li>
+                <li>
+                    Məhsullar
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb end -->
+
+    <section class="pb-8">
+        <div class="container">
+            <div class="flex flex-wrap items-center">
+                <form action="" class="m-0">
+                    <div class="flex flex-wrap items-center mb-5">
+                        <div class="mb-3">
+                            <label for="category">
+                                <select name="category" id="category" class="form_select">
+                                    <option value="all">Kateqoriya</option>
+                                    <option value="1">Kateqoriya 1</option>
+                                    <option value="2">Kateqoriya 2</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="popularity">
+                                <select name="popularity" id="popularity" class="form_select">
+                                    <option value="all">Populyarlığına görə</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="new">
+                                <select name="new" id="new" class="form_select">
+                                    <option value="new">Yeni kolleksiya</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="w-full md:w-1/2 lg:w-1/3">
+                    <div class="glide detail_glide">
+                        <div class="glide__track pb-20" data-glide-el="track">
+                            <ul class="glide__slides py-5">
+                                <li class="glide__slide px-2">
+                                    <div class="relative h-[330px]">
+                                        <span class="p_badge">Yeni</span>
+                                        <img src="./assets/images/products/product.png" class="w-full h-full" alt="">
+                                    </div>
+                                </li>
+                                <li class="glide__slide px-2">
+                                    <div class="relative h-[330px]">
+                                        <span class="p_badge">Yeni</span>
+                                        <img src="./assets/images/products/product_1.png" class="w-full h-full" alt="">
+                                    </div>
+                                </li>
+                                <li class="glide__slide px-2">
+                                    <div class="relative h-[330px]">
+                                        <span class="p_badge">Yeni</span>
+                                        <img src="./assets/images/products/product_2.png" class="w-full h-full" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet w-16 h-16 shadow-none rounded-md p-2" data-glide-dir="=0">
+                                <img src="./assets/images/products/product.png" class="w-full h-full" alt="">
+                            </button>
+                            <button class="glide__bullet w-16 h-16 shadow-none rounded-md p-2" data-glide-dir="=1">
+                                <img src="./assets/images/products/product_1.png" class="w-full h-full" alt="">
+                            </button>
+                            <button class="glide__bullet w-16 h-16 shadow-none rounded-md p-2" data-glide-dir="=2">
+                                <img src="./assets/images/products/product_2.png" class="w-full h-full" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-2/3">
+                    <div class="pt-10 md:px-5">
+                        <h4 class="section_title pb-4">
+                            SOLAS Inflatable Lifejacket - Child
+                        </h4>
+                        <div class="inner_text">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="py-5 text-center">
+                        <h4 class="relative inline-block mx-auto section_title after text-center">
+                            Oxşar məhsullar
+                        </h4>
+                    </div>
+                    <div class="glide products_glide">
+                        <div class="glide__track pb-12" data-glide-el="track">
+                            <ul class="glide__slides py-5">
+                                <li class="glide__slide px-2">
+                                    <div class="product_card group">
+                                        <div class="max-w-[182px] mx-auto py-3">
+                                            <a href="./product.html" class="block w-full">
+                                                <img src="./assets/images/products/product.png"
+                                                     class="w-full h-[200px] transition duration-500 group-hover:scale-110"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                        <a href="./product.html"
+                                           class="text-lg text-center font-medium transition duration-500 group-hover:text-[#F58220]">
+                                            SOLAS Inflatable Lifejacket-Child
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide px-2">
+                                    <div class="product_card group">
+                                        <div class="max-w-[182px] mx-auto py-3">
+                                            <a href="./product.html" class="block w-full">
+                                                <img src="./assets/images/products/product_1.png"
+                                                     class="w-full h-[200px] transition duration-500 group-hover:scale-110"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                        <a href="./product.html"
+                                           class="text-lg text-center font-medium transition duration-500 group-hover:text-[#F58220]">
+                                            SOLAS Inflatable Lifejacket - Child
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide px-2">
+                                    <div class="product_card group">
+                                        <span class="p_badge">
+                                            Yeni
+                                        </span>
+                                        <div class="max-w-[182px] mx-auto py-3">
+                                            <a href="./product.html" class="block w-full">
+                                                <img src="./assets/images/products/product_2.png"
+                                                     class="w-full h-[200px] transition duration-500 group-hover:scale-110"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                        <a href="./product.html"
+                                           class="text-lg text-center font-medium transition duration-500 group-hover:text-[#F58220]">
+                                            SOLAS Inflatable Lifejacket - Child
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="glide__slide px-2">
+                                    <div class="product_card group">
+                                        <div class="max-w-[182px] mx-auto py-3">
+                                            <a href="./product.html" class="block w-full">
+                                                <img src="./assets/images/products/product_3.png"
+                                                     class="w-full h-[200px] transition duration-500 group-hover:scale-110"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                        <a href="./product.html"
+                                           class="text-lg text-center font-medium transition duration-500 group-hover:text-[#F58220]">
+                                            SOLAS Inflatable Lifejacket - Child
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer start -->
+<footer>
+    <div class="bg-[#F0F3F6] px-4 pt-11">
+        <div class="container">
+            <div class="border-b-2 border-[#ACB1C4] pb-8">
+                <div class="row">
+                    <div class="w-full md:w-1/3 lg:w-1/4">
+                        <ul class="footer_widget">
+                            <li>
+                                <a href="./about.html">
+                                    Haqqımızda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Qaydalar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/3 lg:w-1/4">
+                        <ul class="footer_widget">
+                            <li>
+                                <a href="#">
+                                    İstifadəçi şərtləri
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Məxfilik siyasəti
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/3 lg:w-1/4">
+                        <ul class="footer_widget">
+                            <li>
+                                <a href="#">
+                                    Çatdırılma şərtləri
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/3 lg:w-1/4">
+                        <ul class="footer_widget">
+                            <li>
+                                <a href="tel:0504567890">
+                                    (050) 456 78 90
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@azsafety.az">
+                                    info@azsafety.az
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-8">
+                <div class="row">
+                    <div class="w-full md:w-1/2">
+                        <span class="text-[#ACB1C4]">
+                            &copy; 2023 Bütün hüquqlar qorunur.
+                        </span>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <ul class="flex items-center md:justify-end mt-3 md:mt-0 text-xl text-[#F58220] gap-2">
+                            <li>
+                                <a href="#">
+                                    <span class="mdi mdi-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="mdi mdi-linkedin"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="mdi mdi-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="mdi mdi-instagram"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="mdi mdi-youtube"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<!--Alpine js-->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!--Glide js-->
+<script src="./assets/plugins/glide/glide.min.js"></script>
+<!--Custom js-->
+<script src="./assets/js/slides.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
