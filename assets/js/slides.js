@@ -9,6 +9,7 @@ if (document.querySelector('.services_glide')) {
         type: 'carousel',
         startAt: 0,
         perView: 4,
+        autoplay: 5000,
         breakpoints: {
             610: {
                 perView: 1
@@ -24,6 +25,7 @@ if (document.querySelector('.products_glide')) {
         type: 'carousel',
         startAt: 0,
         perView: 4,
+        autoplay: 5000,
         breakpoints: {
             610: {
                 perView: 1

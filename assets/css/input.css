@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.breadcrumb {
+    @apply flex items-center text-sm text-[#AEAEAE] pt-5 gap-1
+}
+
 .overlay {
     @apply absolute w-full h-full bg-black opacity-35 pointer-events-none -z-10
 }
@@ -31,7 +35,15 @@ body {
 }
 
 .form_control {
-    @apply inline-block w-full rounded-md pl-2 py-1 bg-transparent border border-white focus:outline-none text-white
+    @apply inline-block w-full text-[#1E1E1E] rounded-md pl-2 py-2 bg-transparent border border-[#D9D9D9] focus:outline-none
+}
+
+.form_control.search {
+    @apply text-white py-1 placeholder-white
+}
+
+.form_textarea {
+    @apply block w-full border border-[#D9D9D9] pl-2 py-2 focus:outline-none resize-none rounded-md
 }
 
 .hover_element {
@@ -84,6 +96,14 @@ body {
 
 .section_title.after {
     @apply after:absolute after:content-[''] after:w-10 after:h-[2px] after:bg-[#F58220] after:bottom-0 after:right-0
+}
+
+.section_title.line_after {
+    @apply md:after:absolute md:after:content-[''] md:after:w-8 md:after:h-0.5 md:after:bg-[#FFB805] md:after:-right-[45px] md:after:top-1/2 md:before:absolute md:before:content-[''] md:before:w-8 md:before:h-0.5 md:before:bg-[#FFB805] md:before:-left-[45px] md:before:top-1/2
+}
+
+.text-main {
+    @apply text-[#F58220]
 }
 
 .bg_section {
@@ -148,4 +168,8 @@ body {
 
 .pagination_link.active {
     @apply bg-[#FFB805] text-white border-transparent
+}
+
+.btn_main {
+    @apply w-full flex items-center justify-center bg-[#F58220] text-white py-3
 }
