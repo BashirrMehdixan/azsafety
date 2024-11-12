@@ -644,12 +644,12 @@ video {
   margin-bottom: 2.25rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -848,6 +848,11 @@ video {
 .bg-\[\#F58220\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 130 32 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-2 {
@@ -1645,6 +1650,10 @@ body {
 
   .md\:w-3\/4 {
     width: 75%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:grid-cols-2 {
