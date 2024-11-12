@@ -1,8 +1,9 @@
+<!doctype html>
 <html lang="az" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Azsafety | Services</title>
+    <title>Azsafety | Home</title>
     <!-- Poppins font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +67,7 @@
     </div>
     <nav>
         <div class="container">
-            <div class="flex items center justify-between py-3">
+            <div class="flex items-center justify-between py-3">
                 <a href="./index.html">
                     <img src="./assets/images/logo.png" class="max-w-[70px]" alt="Azsafety">
                 </a>
@@ -96,23 +97,23 @@
                             Əlaqə
                         </a>
                     </li>
-                    <li class="relative" x-data="{ open: false }">
+                    <li class="hidden lg:block relative" x-data="{ open: false }">
                         <button class="flex items-center" @click="open = !open">
                             <span>Az</span>
                             <span class="mdi mdi-chevron-down text-xl"></span>
                         </button>
                         <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
-                            <li class="pt-3 hover:bg-[#FFB805]">
+                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
                                 <a href="#" class="block w-full">
                                     Az
                                 </a>
                             </li>
-                            <li class="pt-3 hover:bg-[#FFB805]">
+                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
                                 <a href="#" class="block w-full">
                                     En
                                 </a>
                             </li>
-                            <li class="pt-3 hover:bg-[#FFB805]">
+                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
                                 <a href="#" class="block w-full">
                                     Ru
                                 </a>
@@ -120,14 +121,40 @@
                         </ul>
                     </li>
                 </ul>
-                <button class="block lg:hidden text-3xl" @click="nav = !nav">
-                    <span class="mdi" x-bind:class="nav ? 'mdi-close' : 'mdi-menu'"></span>
-                </button>
+                <div class="flex items-center gap-4 lg:hidden">
+                    <div class="relative" x-data="{ open: false }">
+                        <button class="flex items-center" @click="open = !open">
+                            <span>Az</span>
+                            <span class="mdi mdi-chevron-down text-xl"></span>
+                        </button>
+                        <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
+                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                <a href="#" class="block w-full">
+                                    Az
+                                </a>
+                            </li>
+                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                <a href="#" class="block w-full">
+                                    En
+                                </a>
+                            </li>
+                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                <a href="#" class="block w-full">
+                                    Ru
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="block lg:hidden text-3xl" @click="nav = !nav">
+                        <span class="mdi" x-bind:class="nav ? 'mdi-close' : 'mdi-menu'"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 </header>
 <!-- Navbar end -->
+
 <main>
     <!-- Breadcrumb start -->
     <div class="py-9">
