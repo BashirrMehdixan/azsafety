@@ -173,3 +173,11 @@ body {
 .btn_main {
     @apply w-full flex items-center justify-center bg-[#F58220] text-white py-3
 }
+
+.blog_thumbnail {
+    @apply w-full h-[360px]
+}
+
+.blog_date {
+    @apply text-[#F58220] uppercase text-sm font-medium
+}
