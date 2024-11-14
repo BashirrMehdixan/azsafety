@@ -181,3 +181,11 @@ body {
 .blog_date {
     @apply text-[#F58220] uppercase text-sm font-medium
 }
+
+.counter_items {
+    @apply flex items-center justify-around
+}
+
+.counter_item {
+    @apply flex items-center gap-1 text-2xl md:text-4xl lg:text-5xl font-medium
+}

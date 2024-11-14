@@ -1638,6 +1638,35 @@ body {
   color: rgb(245 130 32 / var(--tw-text-opacity));
 }
 
+.counter_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counter_item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .counter_item {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .counter_item {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 .odd\:flex-row-reverse:nth-child(odd) {
   flex-direction: row-reverse;
 }
