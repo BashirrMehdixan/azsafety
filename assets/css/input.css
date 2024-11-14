@@ -238,3 +238,7 @@ body {
 .slide_pagination .p_bullet:is(.active) {
     @apply border-[#F58220]
 }
+
+.b_social {
+    @apply flex items-center justify-center bg-[#D8DBF6] text-[#A2A6CA] w-7 h-7 text-lg rounded-full shrink-0
+}

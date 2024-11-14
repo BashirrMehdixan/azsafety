@@ -59,4 +59,7 @@ slide_bullets.forEach(bullet => {
         slideImg.src = e.target.dataset.src;
     })
 })
-Fancybox.bind("[data-fancybox]", {});
+
+if (document.querySelector("[data-fancybox]")) {
+    Fancybox.bind("[data-fancybox]", {});
+}
