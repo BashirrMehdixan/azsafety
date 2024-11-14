@@ -70,9 +70,6 @@ body {
     @apply relative flex items-center justify-center h-screen bg-[length:100%_100%] bg-center bg-no-repeat z-10
 }
 
-.btn_outline {
-    @apply border border-white py-3 px-14 text-center max-w-2xl
-}
 
 .small_title {
     @apply text-lg font-medium uppercase text-[#F58220]
@@ -170,8 +167,24 @@ body {
     @apply bg-[#FFB805] text-white border-transparent
 }
 
+.button_groups {
+    @apply flex items-center gap-2 px-3 py-1 opacity-0 transition duration-500 group-hover:opacity-100
+}
+
 .btn_main {
     @apply w-full flex items-center justify-center bg-[#F58220] text-white py-3
+}
+
+.btn_gray {
+    @apply text-xl text-[#F58220] bg-[#D8DBF680] py-[5px] px-2 rounded-full
+}
+
+.btn_outline {
+    @apply border border-white py-3 px-14 text-center max-w-2xl
+}
+
+.btn_close {
+    @apply border-2 border-[#D8DBF6] py-1 px-2 text-[#F58220] text-lg rounded-full
 }
 
 .blog_thumbnail {
@@ -188,4 +201,40 @@ body {
 
 .counter_item {
     @apply flex items-center gap-1 text-2xl md:text-4xl lg:text-5xl font-medium
+}
+
+.certificate_card {
+    @apply relative h-[376px] border border-[#D8DBF6] transition duration-500 hover:border hover:border-[#F58220]
+}
+
+.certificate_img {
+    @apply w-full max-h-[640px]
+}
+
+.modal {
+    @apply w-full h-full fixed z-20
+}
+
+.modal_body {
+    @apply bg-white absolute left-0 top-0 pb-3 px-5
+}
+
+.custom_slide {
+    @apply flex items-start
+}
+
+.slide_pagination .p_bullet {
+    @apply max-w-[150px] h-[200px] border border-[#D8DBF6] cursor-pointer mb-3
+}
+
+.big_img {
+    @apply py-3 pr-3
+}
+
+.slide_img {
+    @apply w-[420px] h-[625px] border border-[#F58220]
+}
+
+.slide_pagination .p_bullet:is(.active) {
+    @apply border-[#F58220]
 }
