@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="az" class="overflow-x-hidden">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,464 +8,486 @@
     <!-- Poppins font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Glide js -->
     <link rel="stylesheet" href="./assets/plugins/glide/glide.core.min.css">
     <link rel="stylesheet" href="./assets/plugins/glide/glide.theme.min.css">
     <!-- Fancybox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <!-- Material design icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css">
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/output.css">
 </head>
+
 <body class="overflow-x-hidden">
-<!-- Navbar start-->
-<header class="relative" x-data="{ nav: false }">
-    <div class="bg-[#1E1E1E] py-3">
-        <div class="container">
-            <div class="flex items-center justify-end">
-                <ul class="social_networks">
-                    <li class="hover_element">
-                        <a href="">
-                            <span class="mdi mdi-facebook"></span>
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="">
-                            <span class="mdi mdi-linkedin"></span>
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="">
-                            <span class="mdi mdi-twitter"></span>
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="">
-                            <span class="mdi mdi-instagram"></span>
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="">
-                            <span class="mdi mdi-youtube"></span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="pl-3">
-                    <form action="" class="m-0">
-                        <div class="relative flex-1">
-                            <label>
-                                <input type="text" class="form_control search" placeholder="Axtar">
-                            </label>
-                            <button class="text-lg text-white absolute top-[12%] right-[5px]">
-                                <span class="mdi mdi-magnify"></span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav>
-        <div class="container">
-            <div class="flex items-center justify-between py-3">
-                <a href="./index.html">
-                    <img src="./assets/images/logo.png" class="max-w-[70px]" alt="Azsafety">
-                </a>
-                <ul class="navbar" x-bind:class="nav ? 'translate-x-0' : 'translate-x-full'">
-                    <li class="hover_element">
-                        <a href="./about.html">
-                            Haqqımızda
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="./products.html">
-                            Məhsullar
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="./services.html">
-                            Xidmətlər
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="./certificates.html">
-                            Sertifikatlar
-                        </a>
-                    </li>
-                    <li class="hover_element">
-                        <a href="./contact.html">
-                            Əlaqə
-                        </a>
-                    </li>
-                    <li class="hidden lg:block relative" x-data="{ open: false }">
-                        <button class="flex items-center" @click="open = !open">
-                            <span>Az</span>
-                            <span class="mdi mdi-chevron-down text-xl"></span>
-                        </button>
-                        <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
-                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
-                                <a href="#" class="block w-full">
-                                    Az
-                                </a>
-                            </li>
-                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
-                                <a href="#" class="block w-full">
-                                    En
-                                </a>
-                            </li>
-                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
-                                <a href="#" class="block w-full">
-                                    Ru
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="flex items-center gap-4 lg:hidden">
-                    <div class="relative" x-data="{ open: false }">
-                        <button class="flex items-center" @click="open = !open">
-                            <span>Az</span>
-                            <span class="mdi mdi-chevron-down text-xl"></span>
-                        </button>
-                        <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
-                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
-                                <a href="#" class="block w-full">
-                                    Az
-                                </a>
-                            </li>
-                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
-                                <a href="#" class="block w-full">
-                                    En
-                                </a>
-                            </li>
-                            <li class="p-3 hover:bg-[#FFB805] hover:text-white">
-                                <a href="#" class="block w-full">
-                                    Ru
-                                </a>
-                            </li>
-                        </ul>
+    <!-- Navbar start-->
+    <header class="relative" x-data="{ nav: false }">
+        <div class="bg-[#1E1E1E] py-3">
+            <div class="container">
+                <div class="flex items-center justify-end">
+                    <ul class="social_networks">
+                        <li class="hover_element">
+                            <a href="">
+                                <span class="mdi mdi-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="">
+                                <span class="mdi mdi-linkedin"></span>
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="">
+                                <span class="mdi mdi-twitter"></span>
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="">
+                                <span class="mdi mdi-instagram"></span>
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="">
+                                <span class="mdi mdi-youtube"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pl-3">
+                        <form action="" class="m-0">
+                            <div class="relative flex-1">
+                                <label>
+                                    <input type="text" class="form_control search" placeholder="Axtar">
+                                </label>
+                                <button class="text-lg text-white absolute top-[12%] right-[5px]">
+                                    <span class="mdi mdi-magnify"></span>
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <button class="block lg:hidden text-3xl" @click="nav = !nav">
-                        <span class="mdi" x-bind:class="nav ? 'mdi-close' : 'mdi-menu'"></span>
-                    </button>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
-<!-- Navbar end -->
-
-<main>
-    <!-- Breadcrumb start -->
-    <div class="py-9">
-        <div class="container">
-            <h3 class="text-2xl text-[#303030] font-medium">
-                Bloqlar
-            </h3>
-            <ul class="breadcrumb">
-                <li>
+        <nav>
+            <div class="container">
+                <div class="flex items-center justify-between py-3">
                     <a href="./index.html">
-                        Ana səhifə
+                        <img src="./assets/images/logo.png" class="max-w-[70px]" alt="Azsafety">
                     </a>
-                </li>
-                <li>
-                    <span class="mdi mdi-chevron-right text-lg"></span>
-                </li>
-                <li>
+                    <ul class="navbar" x-bind:class="nav ? 'translate-x-0' : 'translate-x-full'">
+                        <li class="hover_element">
+                            <a href="./about.html">
+                                Haqqımızda
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="./products.html">
+                                Məhsullar
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="./services.html">
+                                Xidmətlər
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="./certificates.html">
+                                Sertifikatlar
+                            </a>
+                        </li>
+                        <li class="hover_element">
+                            <a href="./contact.html">
+                                Əlaqə
+                            </a>
+                        </li>
+                        <li class="hidden lg:block relative" x-data="{ open: false }">
+                            <button class="flex items-center" @click="open = !open">
+                                <span>Az</span>
+                                <span class="mdi mdi-chevron-down text-xl"></span>
+                            </button>
+                            <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
+                                <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                    <a href="#" class="block w-full">
+                                        Az
+                                    </a>
+                                </li>
+                                <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                    <a href="#" class="block w-full">
+                                        En
+                                    </a>
+                                </li>
+                                <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                    <a href="#" class="block w-full">
+                                        Ru
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="flex items-center gap-4 lg:hidden">
+                        <div class="relative" x-data="{ open: false }">
+                            <button class="flex items-center" @click="open = !open">
+                                <span>Az</span>
+                                <span class="mdi mdi-chevron-down text-xl"></span>
+                            </button>
+                            <ul class="lang_items" x-show="open" x-transition.opacity x-transition.duration.500ms>
+                                <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                    <a href="#" class="block w-full">
+                                        Az
+                                    </a>
+                                </li>
+                                <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                    <a href="#" class="block w-full">
+                                        En
+                                    </a>
+                                </li>
+                                <li class="p-3 hover:bg-[#FFB805] hover:text-white">
+                                    <a href="#" class="block w-full">
+                                        Ru
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="block lg:hidden text-3xl" @click="nav = !nav">
+                            <span class="mdi" x-bind:class="nav ? 'mdi-close' : 'mdi-menu'"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar end -->
+
+    <main>
+        <!-- Breadcrumb start -->
+        <div class="py-9">
+            <div class="container">
+                <h3 class="text-2xl text-[#303030] font-medium">
                     Bloqlar
-                </li>
-            </ul>
+                </h3>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="./index.html">
+                            Ana səhifə
+                        </a>
+                    </li>
+                    <li>
+                        <span class="mdi mdi-chevron-right text-lg"></span>
+                    </li>
+                    <li>
+                        Bloqlar
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!-- Breadcrumb end -->
+        <!-- Breadcrumb end -->
 
-    <section class="pb-8">
-        <div class="container">
-            <div class="row">
-                <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
-                    <div class="blog_thumbnail">
-                        <img src="./assets/images/blogs/blog_1.png" class="w-full h-full" alt="">
-                    </div>
-                    <div class="border-b border-[#EFEFEF] pt-2">
-                        <span class="blog_date">
-                            01 NOYABR
-                        </span>
-                        <h4 class="text-xl font-semibold py-2">
-                            <a href="./blog.html">
-                                Lorem Ipsum is simply dummy text
+        <section class="pb-8">
+            <div class="container">
+                <div class="row">
+                    <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
+                        <div class="blog_card">
+                            <div class="blog_thumbnail">
+                                <img src="./assets/images/blogs/blog_1.png" class="w-full h-full" alt="">
+                            </div>
+                            <div class="border-b border-[#EFEFEF] pt-2">
+                                <span class="blog_date">
+                                    01 NOYABR
+                                </span>
+                                <h4 class="text-xl font-semibold py-2">
+                                    <a href="./blog.html">
+                                        Lorem Ipsum is simply dummy text
+                                    </a>
+                                </h4>
+                                <div class="inner_text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s...
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
+                                <span>
+                                    Ətraflı oxu
+                                </span>
+                                <span class="mdi mdi-arrow-right text-3xl"></span>
                             </a>
-                        </h4>
-                        <div class="inner_text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s...
-                            </p>
                         </div>
                     </div>
-                    <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
-                        <span>
-                            Ətraflı oxu
-                        </span>
-                        <span class="mdi mdi-arrow-right text-3xl"></span>
-                    </a>
+                    <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
+                        <div class="blog_card">
+                            <div class="blog_thumbnail">
+                                <img src="./assets/images/blogs/blog_2.png" class="w-full h-full" alt="">
+                            </div>
+                            <div class="border-b border-[#EFEFEF] pt-2">
+                                <span class="blog_date">
+                                    01 NOYABR
+                                </span>
+                                <h4 class="text-xl font-semibold py-2">
+                                    <a href="./blog.html">
+                                        Lorem Ipsum is simply dummy text
+                                    </a>
+                                </h4>
+                                <div class="inner_text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s...
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
+                                <span>
+                                    Ətraflı oxu
+                                </span>
+                                <span class="mdi mdi-arrow-right text-3xl"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
+                        <div class="blog_card">
+                            <div class="blog_thumbnail">
+                                <img src="./assets/images/blogs/blog_3.png" class="w-full h-full" alt="">
+                            </div>
+                            <div class="border-b border-[#EFEFEF] pt-2">
+                                <span class="blog_date">
+                                    01 NOYABR
+                                </span>
+                                <h4 class="text-xl font-semibold py-2">
+                                    <a href="./blog.html">
+                                        Lorem Ipsum is simply dummy text
+                                    </a>
+                                </h4>
+                                <div class="inner_text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s...
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
+                                <span>
+                                    Ətraflı oxu
+                                </span>
+                                <span class="mdi mdi-arrow-right text-3xl"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
+                        <div class="blog_card">
+                            <div class="blog_thumbnail">
+                                <img src="./assets/images/blogs/blog_4.png" class="w-full h-full" alt="">
+                            </div>
+                            <div class="border-b border-[#EFEFEF] pt-2">
+                                <span class="blog_date">
+                                    01 NOYABR
+                                </span>
+                                <h4 class="text-xl font-semibold py-2">
+                                    <a href="./blog.html">
+                                        Lorem Ipsum is simply dummy text
+                                    </a>
+                                </h4>
+                                <div class="inner_text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s...
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
+                                <span>
+                                    Ətraflı oxu
+                                </span>
+                                <span class="mdi mdi-arrow-right text-3xl"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
+                        <div class="blog_card">
+                            <div class="blog_thumbnail">
+                                <img src="./assets/images/blogs/blog_5.png" class="w-full h-full" alt="">
+                            </div>
+                            <div class="border-b border-[#EFEFEF] pt-2">
+                                <span class="blog_date">
+                                    01 NOYABR
+                                </span>
+                                <h4 class="text-xl font-semibold py-2">
+                                    <a href="./blog.html">
+                                        Lorem Ipsum is simply dummy text
+                                    </a>
+                                </h4>
+                                <div class="inner_text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s...
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
+                                <span>
+                                    Ətraflı oxu
+                                </span>
+                                <span class="mdi mdi-arrow-right text-3xl"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
+                        <div class="blog_card">
+                            <div class="blog_thumbnail">
+                                <img src="./assets/images/blogs/blog_6.png" class="w-full h-full" alt="">
+                            </div>
+                            <div class="border-b border-[#EFEFEF] pt-2">
+                                <span class="blog_date">
+                                    01 NOYABR
+                                </span>
+                                <h4 class="text-xl font-semibold py-2">
+                                    <a href="./blog.html">
+                                        Lorem Ipsum is simply dummy text
+                                    </a>
+                                </h4>
+                                <div class="inner_text">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s...
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
+                                <span>
+                                    Ətraflı oxu
+                                </span>
+                                <span class="mdi mdi-arrow-right text-3xl"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
-                    <div class="blog_thumbnail">
-                        <img src="./assets/images/blogs/blog_2.png" class="w-full h-full" alt="">
-                    </div>
-                    <div class="border-b border-[#EFEFEF] pt-2">
-                        <span class="blog_date">
-                            01 NOYABR
-                        </span>
-                        <h4 class="text-xl font-semibold py-2">
-                            <a href="./blog.html">
-                                Lorem Ipsum is simply dummy text
-                            </a>
-                        </h4>
-                        <div class="inner_text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s...
-                            </p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer start -->
+    <footer>
+        <div class="bg-[#F0F3F6] px-4 pt-11">
+            <div class="container">
+                <div class="border-b-2 border-[#ACB1C4] pb-8">
+                    <div class="row">
+                        <div class="w-full md:w-1/3 lg:w-1/4">
+                            <ul class="footer_widget">
+                                <li>
+                                    <a href="./about.html">
+                                        Haqqımızda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Qaydalar
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/3 lg:w-1/4">
+                            <ul class="footer_widget">
+                                <li>
+                                    <a href="#">
+                                        İstifadəçi şərtləri
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Məxfilik siyasəti
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/3 lg:w-1/4">
+                            <ul class="footer_widget">
+                                <li>
+                                    <a href="#">
+                                        Çatdırılma şərtləri
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/3 lg:w-1/4">
+                            <ul class="footer_widget">
+                                <li>
+                                    <a href="tel:0504567890">
+                                        (050) 456 78 90
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@azsafety.az">
+                                        info@azsafety.az
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
-                        <span>
-                            Ətraflı oxu
-                        </span>
-                        <span class="mdi mdi-arrow-right text-3xl"></span>
-                    </a>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
-                    <div class="blog_thumbnail">
-                        <img src="./assets/images/blogs/blog_3.png" class="w-full h-full" alt="">
-                    </div>
-                    <div class="border-b border-[#EFEFEF] pt-2">
-                        <span class="blog_date">
-                            01 NOYABR
-                        </span>
-                        <h4 class="text-xl font-semibold py-2">
-                            <a href="./blog.html">
-                                Lorem Ipsum is simply dummy text
-                            </a>
-                        </h4>
-                        <div class="inner_text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s...
-                            </p>
+                <div class="py-8">
+                    <div class="row">
+                        <div class="w-full md:w-1/2">
+                            <span class="text-[#ACB1C4]">
+                                &copy; 2023 Bütün hüquqlar qorunur.
+                            </span>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <ul class="flex items-center md:justify-end mt-3 md:mt-0 text-xl text-[#F58220] gap-2">
+                                <li>
+                                    <a href="#">
+                                        <span class="mdi mdi-facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="mdi mdi-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="mdi mdi-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="mdi mdi-instagram"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="mdi mdi-youtube"></span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
-                        <span>
-                            Ətraflı oxu
-                        </span>
-                        <span class="mdi mdi-arrow-right text-3xl"></span>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
-                    <div class="blog_thumbnail">
-                        <img src="./assets/images/blogs/blog_4.png" class="w-full h-full" alt="">
-                    </div>
-                    <div class="border-b border-[#EFEFEF] pt-2">
-                        <span class="blog_date">
-                            01 NOYABR
-                        </span>
-                        <h4 class="text-xl font-semibold py-2">
-                            <a href="./blog.html">
-                                Lorem Ipsum is simply dummy text
-                            </a>
-                        </h4>
-                        <div class="inner_text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s...
-                            </p>
-                        </div>
-                    </div>
-                    <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
-                        <span>
-                            Ətraflı oxu
-                        </span>
-                        <span class="mdi mdi-arrow-right text-3xl"></span>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
-                    <div class="blog_thumbnail">
-                        <img src="./assets/images/blogs/blog_5.png" class="w-full h-full" alt="">
-                    </div>
-                    <div class="border-b border-[#EFEFEF] pt-2">
-                        <span class="blog_date">
-                            01 NOYABR
-                        </span>
-                        <h4 class="text-xl font-semibold py-2">
-                            <a href="./blog.html">
-                                Lorem Ipsum is simply dummy text
-                            </a>
-                        </h4>
-                        <div class="inner_text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s...
-                            </p>
-                        </div>
-                    </div>
-                    <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
-                        <span>
-                            Ətraflı oxu
-                        </span>
-                        <span class="mdi mdi-arrow-right text-3xl"></span>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 mb-5">
-                    <div class="blog_thumbnail">
-                        <img src="./assets/images/blogs/blog_6.png" class="w-full h-full" alt="">
-                    </div>
-                    <div class="border-b border-[#EFEFEF] pt-2">
-                        <span class="blog_date">
-                            01 NOYABR
-                        </span>
-                        <h4 class="text-xl font-semibold py-2">
-                            <a href="./blog.html">
-                                Lorem Ipsum is simply dummy text
-                            </a>
-                        </h4>
-                        <div class="inner_text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s...
-                            </p>
-                        </div>
-                    </div>
-                    <a href="./blog.html" class="flex items-center justify-between font-medium py-3 text-main">
-                        <span>
-                            Ətraflı oxu
-                        </span>
-                        <span class="mdi mdi-arrow-right text-3xl"></span>
-                    </a>
                 </div>
             </div>
         </div>
-    </section>
-</main>
-<!-- Footer start -->
-<footer>
-    <div class="bg-[#F0F3F6] px-4 pt-11">
-        <div class="container">
-            <div class="border-b-2 border-[#ACB1C4] pb-8">
-                <div class="row">
-                    <div class="w-full md:w-1/3 lg:w-1/4">
-                        <ul class="footer_widget">
-                            <li>
-                                <a href="./about.html">
-                                    Haqqımızda
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Qaydalar
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4">
-                        <ul class="footer_widget">
-                            <li>
-                                <a href="#">
-                                    İstifadəçi şərtləri
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Məxfilik siyasəti
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4">
-                        <ul class="footer_widget">
-                            <li>
-                                <a href="#">
-                                    Çatdırılma şərtləri
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    FAQ
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/3 lg:w-1/4">
-                        <ul class="footer_widget">
-                            <li>
-                                <a href="tel:0504567890">
-                                    (050) 456 78 90
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@azsafety.az">
-                                    info@azsafety.az
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="py-8">
-                <div class="row">
-                    <div class="w-full md:w-1/2">
-                        <span class="text-[#ACB1C4]">
-                            &copy; 2023 Bütün hüquqlar qorunur.
-                        </span>
-                    </div>
-                    <div class="w-full md:w-1/2">
-                        <ul class="flex items-center md:justify-end mt-3 md:mt-0 text-xl text-[#F58220] gap-2">
-                            <li>
-                                <a href="#">
-                                    <span class="mdi mdi-facebook"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="mdi mdi-linkedin"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="mdi mdi-twitter"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="mdi mdi-instagram"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="mdi mdi-youtube"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer end -->
+    </footer>
+    <!-- Footer end -->
 
-<!--Alpine js-->
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<!-- Fancybox -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<!--Glide js-->
-<script src="./assets/plugins/glide/glide.min.js"></script>
-<!--Custom js-->
-<script src="./assets/js/slides.js"></script>
-<script src="./assets/js/main.js"></script>
+    <!--Alpine js-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!--Glide js-->
+    <script src="./assets/plugins/glide/glide.min.js"></script>
+    <!--Custom js-->
+    <script src="./assets/js/slides.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
